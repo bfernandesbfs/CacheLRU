@@ -459,7 +459,7 @@
 					};
 					3549BB2D1DA389DB00C63030 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = "";
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					3549BB3A1DA389E800C63030 = {
@@ -901,6 +901,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -923,6 +924,7 @@
 				PRODUCT_NAME = CacheLRU;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
