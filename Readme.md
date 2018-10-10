@@ -1,8 +1,5 @@
 # CacheLRU
 
-[![Platforms](https://img.shields.io/cocoapods/p/CacheLRU.svg)](https://cocoapods.org/pods/CacheLRU)
-[![License](https://img.shields.io/cocoapods/l/CacheLRU.svg)](https://raw.githubusercontent.com/bfernandesbfs/CacheLRU/master/LICENSE)
-
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/CacheLRU.svg)](https://cocoapods.org/pods/CacheLRU)
@@ -134,19 +131,40 @@ $ git submodule update --init --recursive
 
 </p></details>
 
-<details>
-  <summary><strong>Embedded Binaries</strong></summary><p>
-
-- Download the latest release from https://github.com/bfernandesbfs/CacheLRU/releases
-- Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the "Targets" heading in the sidebar.
-- In the tab bar at the top of that window, open the "General" panel.
-- Click on the `+` button under the "Embedded Binaries" section.
-- Add the downloaded `CacheLRU.framework`.
-- And that's it!
-
-</p></details>
-
 ## Usage
+
+- Initialize Cache
+
+``` swift
+
+let cache = CacheLRU<Int, String>(capacity: 2)
+
+```
+
+- Set value in storage
+
+``` swift
+
+cache.setValue("One", for: 1)
+
+```
+
+- Get value in storage
+
+``` swift
+
+cache.getValue(for: 1)
+// "One"
+
+```
+
+- Remove all value
+
+``` swift
+
+cache.removeAll()
+
+```
 
 ## Contributing
 
