@@ -25,6 +25,6 @@ let package = Package(
         .testTarget(
             name: "CacheLRUTests",
             dependencies: ["CacheLRU"],
-            path: "Tests")
+            path: "Tests"),
     ]
 )

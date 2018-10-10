@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15DA65CC216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA65CB216EAE6200BD0506 /* DoublyLinkedList.swift */; };
+		15DA65CD216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA65CB216EAE6200BD0506 /* DoublyLinkedList.swift */; };
+		15DA65CE216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA65CB216EAE6200BD0506 /* DoublyLinkedList.swift */; };
+		15DA65CF216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA65CB216EAE6200BD0506 /* DoublyLinkedList.swift */; };
 		3549BB501DA38A2000C63030 /* CacheLRU.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* CacheLRU.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB511DA38A2000C63030 /* CacheLRU.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* CacheLRU.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB521DA38A2100C63030 /* CacheLRU.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* CacheLRU.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -99,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15DA65CB216EAE6200BD0506 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* CacheLRU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheLRU.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* CacheLRU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheLRU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				359649021FB18CBF00FC7ADC /* CacheLRU.swift */,
+				15DA65CB216EAE6200BD0506 /* DoublyLinkedList.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				3549BB1D1DA389CD00C63030 /* Frameworks */,
 				3549BB1E1DA389CD00C63030 /* Headers */,
 				3549BB1F1DA389CD00C63030 /* Resources */,
+				15DA65D0216EAE8F00BD0506 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -329,6 +336,7 @@
 				3549BB2A1DA389DB00C63030 /* Frameworks */,
 				3549BB2B1DA389DB00C63030 /* Headers */,
 				3549BB2C1DA389DB00C63030 /* Resources */,
+				15DA65D3216EAED800BD0506 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -347,6 +355,7 @@
 				3549BB371DA389E800C63030 /* Frameworks */,
 				3549BB381DA389E800C63030 /* Headers */,
 				3549BB391DA389E800C63030 /* Resources */,
+				15DA65D1216EAEC000BD0506 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -365,6 +374,7 @@
 				3549BB441DA389F300C63030 /* Frameworks */,
 				3549BB451DA389F300C63030 /* Headers */,
 				3549BB461DA389F300C63030 /* Resources */,
+				15DA65D2216EAECD00BD0506 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -554,12 +564,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15DA65D0216EAE8F00BD0506 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		15DA65D1216EAEC000BD0506 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		15DA65D2216EAECD00BD0506 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		15DA65D3216EAED800BD0506 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3549BB1C1DA389CD00C63030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				359649031FB18CC000FC7ADC /* CacheLRU.swift in Sources */,
+				15DA65CC216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649061FB18CC000FC7ADC /* CacheLRU.swift in Sources */,
+				15DA65CF216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649041FB18CC000FC7ADC /* CacheLRU.swift in Sources */,
+				15DA65CD216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649051FB18CC000FC7ADC /* CacheLRU.swift in Sources */,
+				15DA65CE216EAE6200BD0506 /* DoublyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,14 +770,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -739,12 +828,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

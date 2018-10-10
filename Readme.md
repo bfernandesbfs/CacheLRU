@@ -10,7 +10,7 @@
 [![Travis](https://img.shields.io/travis/bfernandesbfs/CacheLRU/master.svg)](https://travis-ci.org/bfernandesbfs/CacheLRU/branches)
 [![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
 
-SiSimple implementation based in the algorithm LRU
+Simple implementation based in the algorithm LRU
 
 - [Requirements](#requirements)
 - [Installation](#installation)
