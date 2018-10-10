@@ -1,0 +1,8 @@
+author: Bruno Fernandes
+author_url: https://twitter.com/bfernandesbfs
+github_url: https://github.com/bfernandesbfs/CacheLRU
+root_url: https://bfernandesbfs.github.io/CacheLRU/
+module: CacheLRU
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'CacheLRU.xcworkspace', -scheme, 'CacheLRU-iOS']
