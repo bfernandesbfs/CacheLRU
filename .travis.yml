@@ -56,8 +56,6 @@ script:
 
 jobs:
   include:
-    - stage: Danger
-      script: bundle exec danger
     - stage: Pod lib lint
       script: bundle exec pod lib lint --verbose --allow-warnings
     - stage: Deploy Github
