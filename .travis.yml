@@ -66,7 +66,7 @@ jobs:
       deploy:
         - provider: releases 
           api_key:
-            secure: # https://docs.travis-ci.com/user/deployment/releases/
+            secure: a5913358abbd1a14410dec20a8fd7365f0741fb7
           file:
             - CacheLRU.framework.zip
           skip_cleanup: true
