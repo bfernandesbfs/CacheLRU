@@ -56,8 +56,6 @@ script:
 
 jobs:
   include:
-    - stage: Pod lib lint
-      script: bundle exec pod lib lint --use-libraries --verbose --allow-warnings
     - stage: Deploy Github
       script: skip
       before_deploy:
@@ -73,12 +71,4 @@ jobs:
           overwrite: true
           on:
             repo: bfernandesbfs/CacheLRU
-            tags: true
-    - stage: Deploy Cocoapods
-      script: skip
-      deploy:
-        - provider: script # https://fuller.li/posts/automated-cocoapods-releases-with-ci/
-          script: bundle exec pod trunk push
-          skip_cleanup: true
-          on:
             tags: true
